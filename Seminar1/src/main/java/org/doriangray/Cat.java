@@ -15,6 +15,13 @@ public class Cat extends Animal{
         super(name, birthDate, vaccine, illnes, ownerName);
         this.legsCount = legsCount;
     }
+    public Cat(String name){
+        super(name);
+    }
+    @Override
+    protected void go(){
+        System.out.println("Cat with name " +  name + " can go");
+    }
 
     public int getLegsCount() {
         return legsCount;
