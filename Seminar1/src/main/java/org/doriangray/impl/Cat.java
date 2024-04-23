@@ -1,9 +1,11 @@
-package org.doriangray;
+package org.doriangray.impl;
+
+import org.doriangray.Animal;
 
 import java.time.LocalDate;
 import java.util.List;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
 
     private int legsCount;
     public Cat(String name,
@@ -19,7 +21,7 @@ public class Cat extends Animal{
         super(name);
     }
     @Override
-    protected void go(){
+    public void go(){
         System.out.println("Cat with name " +  name + " can go");
     }
 

@@ -1,5 +1,10 @@
 package org.doriangray;
 
+import org.doriangray.impl.Cat;
+import org.doriangray.impl.Duck;
+import org.doriangray.impl.Eagle;
+import org.doriangray.impl.Snake;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
