@@ -38,28 +38,48 @@ public class Main {
         Snake snake = new Snake("Snaky");
         Duck duck = new Duck("Ducky");
 
+//        Animal animal = new Animal() {  //Создание анонимного класса, так как есть нереализованный абстрактный метод
+//            @Override
+//            public void lifeCycle() {
+//
+//            }
+//        };
+
         System.out.println("Actions with eagle:");
         eagle.fly();
-        eagle.swim();
-        eagle.go();
+//        eagle.swim();
+//        eagle.go();
         System.out.println("----------------------");
 
         System.out.println("Actions with cat:");
-        cat.fly();
-        cat.swim();
-        cat.go();
+//        cat.fly();
+//        cat.swim();
+//        cat.go();
+//        cat.run();
         System.out.println("----------------------");
 
         System.out.println("Actions with snake:");
-        snake.fly();
-        snake.swim();
-        snake.go();
+//        snake.fly();
+//        snake.swim();
+//        snake.go();
         System.out.println("----------------------");
 
         System.out.println("Actions with duck:");
         duck.fly();
         duck.swim();
-        duck.go();
+//        duck.go();
         System.out.println("----------------------");
+
+//        Goable goable = new Goable() {
+//            @Override
+//            public double run() {
+//                return 2+2;
+//            }
+//        };
+
+//        Goable goable1 = () -> 2+2; //Абстрактный класс в виде лямбды.
+        Goable goable2 = (x, y) -> x + y;
+        System.out.println(goable2.run(2,4)); //Вызов лямбды
+        Goable goable3 = Double::sum; //Замена x+y на метод sum в классе Double
     }
 }

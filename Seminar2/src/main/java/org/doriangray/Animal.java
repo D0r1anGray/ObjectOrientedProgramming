@@ -3,7 +3,7 @@ package org.doriangray;
 import java.time.LocalDate;
 import java.util.List;
 
-public class Animal {
+public abstract class Animal {
     protected String name;
     protected LocalDate birthDate;
     protected List<String> vaccine;
@@ -58,23 +58,7 @@ public class Animal {
         System.out.println("Animal is sleeping");
     }
 
-    protected void fly(){
-        System.out.println("Animal " + name + " can't fly");;
-    }
-    protected void go(){
-        System.out.println("Animal " + name + " can't go");;
-    }
-    protected void swim(){
-        System.out.println("Animal " + name + " can't swim");;
-    }
-
-    public void lifeCycle(){
-        wakeup();
-        eat();
-        play();
-        sleep();
-    }
-
+    //public abstract void lifeCycle(); //Жизненный цикл должны описать наследники
     @Override
     public String toString() {
         return "Animal{" +
