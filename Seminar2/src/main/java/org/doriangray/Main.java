@@ -48,14 +48,14 @@ public class Main {
         System.out.println("Actions with eagle:");
         eagle.fly();
 //        eagle.swim();
-//        eagle.go();
+        eagle.run();
         System.out.println("----------------------");
 
         System.out.println("Actions with cat:");
 //        cat.fly();
 //        cat.swim();
 //        cat.go();
-//        cat.run();
+        cat.run();
         System.out.println("----------------------");
 
         System.out.println("Actions with snake:");
@@ -78,8 +78,15 @@ public class Main {
 //        };
 
 //        Goable goable1 = () -> 2+2; //Абстрактный класс в виде лямбды.
-        Goable goable2 = (x, y) -> x + y;
-        System.out.println(goable2.run(2,4)); //Вызов лямбды
-        Goable goable3 = Double::sum; //Замена x+y на метод sum в классе Double
+//        Goable goable2 = (x, y) -> x + y;
+//        System.out.println(goable2.run(2,4)); //Вызов лямбды
+//        Goable goable3 = Double::sum; //Замена x+y на метод sum в классе Double
+
+//        System.out.println(eagle.type); // Получение типа класса объекта. type был прописан в Animal
+//        System.out.println(cat.type);
+        Clinic clinic = new Clinic();
+        clinic.addSeveralPatients(eagle, cat, snake, duck);
+        System.out.println(clinic.getPatients()); //Получение списка пациентов
+        System.out.println(clinic.getGoables());
     }
 }

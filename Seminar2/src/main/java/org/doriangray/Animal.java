@@ -10,12 +10,15 @@ public abstract class Animal {
     protected String illnes;
     protected String ownerName;
 
+    protected String type;
+
     public Animal(String name, LocalDate birthDate, List<String> vaccine, String illnes, String ownerName) {
         this.name = name;
         this.birthDate = birthDate;
         this.vaccine = vaccine;
         this.illnes = illnes;
         this.ownerName = ownerName;
+        this.type = getClass().getSimpleName(); //Получение типа класса
     }
     public Animal(String name) {
         this.name = name;

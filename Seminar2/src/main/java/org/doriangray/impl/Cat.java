@@ -6,7 +6,7 @@ import org.doriangray.Goable;
 import java.time.LocalDate;
 import java.util.List;
 
-public class Cat extends Animal /*implements Goable*/ {
+public class Cat extends Animal implements Goable {
 
     private int legsCount;
     public Cat(String name,
@@ -30,10 +30,11 @@ public class Cat extends Animal /*implements Goable*/ {
         return legsCount;
     }
 
-//    @Override
-//    public double run() {
-//        return 0;
-//    }
+    @Override
+    public double run() {
+        System.out.printf("Animal %s is running with speed: ", type);
+        return 15D;
+    }
 
 //    @Override
 //    public double run(double a, double b) {
