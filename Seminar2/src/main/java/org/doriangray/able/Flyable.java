@@ -1,4 +1,4 @@
-package org.doriangray;
+package org.doriangray.able;
 
 public interface Flyable {
     double fly();

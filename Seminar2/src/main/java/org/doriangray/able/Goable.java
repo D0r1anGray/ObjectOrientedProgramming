@@ -1,4 +1,4 @@
-package org.doriangray;
+package org.doriangray.able;
 
 @FunctionalInterface //Пометили интерефейс функциональным.
 public interface Goable { //Интерфейсы описывают поведение объектов

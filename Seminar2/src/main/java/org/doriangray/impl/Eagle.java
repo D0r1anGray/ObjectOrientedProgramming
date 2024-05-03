@@ -1,15 +1,15 @@
 package org.doriangray.impl;
 
 import org.doriangray.Animal;
-import org.doriangray.Flyable;
-import org.doriangray.Goable;
+import org.doriangray.able.Flyable;
+import org.doriangray.able.Goable;
 
 import java.time.LocalDate;
 import java.util.List;
 
 public class Eagle extends Animal implements Flyable, Goable {
-    public Eagle(String name, LocalDate birthDate, List<String> vaccine, String illnes, String ownerName) {
-        super(name, birthDate, vaccine, illnes, ownerName);
+    public Eagle(String name, LocalDate birthDate, String illnes, String ownerName) {
+        super(name, birthDate, illnes, ownerName);
     }
     public Eagle(String name){
         super(name);

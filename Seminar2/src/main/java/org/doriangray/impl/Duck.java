@@ -1,12 +1,8 @@
 package org.doriangray.impl;
 
 import org.doriangray.Animal;
-import org.doriangray.Flyable;
-import org.doriangray.Goable;
-import org.doriangray.Swimable;
-
-import java.time.LocalDate;
-import java.util.List;
+import org.doriangray.able.Flyable;
+import org.doriangray.able.Swimable;
 
 public class Duck extends Animal implements Flyable, Swimable/*, Goable*/ {
 
